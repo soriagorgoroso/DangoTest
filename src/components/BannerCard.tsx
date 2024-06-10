@@ -11,7 +11,7 @@ const BannerCard: React.FC = () => {
             <div className="rounded-lg mt-6">
               <img
                 className="rounded-lg"
-                src="src/assets/model1.png"
+                src="https://github.com/soriagorgoroso/DangoTest/blob/main/public/img/model1.png?raw=true"
                 alt="Descripción de la imagen"
               />
             </div>

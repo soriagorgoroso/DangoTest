@@ -10,7 +10,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ price, imgUrl }) => {
     <div className="drop-shadow-custom2 bg-white rounded-xl shadow-lg p-4 flex flex-col items-center mt-3">
       <div>
         <img
-          src={`src/assets/${imgUrl}`}
+          src={`public\img\${imgUrl}`}
           alt="Product Image"
           className="w-full md:w-[193px]"
         />

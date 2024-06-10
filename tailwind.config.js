@@ -4,7 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        discountBg: "#7AA65A",
+        primary: "#7AA65A",
+      },
+      dropShadow: {
+        custom: "0 5px 1px rgba(0, 0, 0, 0.20)",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
       },
     },
   },

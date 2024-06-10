@@ -3,7 +3,7 @@ import BannerCard from "./BannerCard";
 
 const BannerComponent: React.FC = () => {
   return (
-    <div className="relative">
+    <div className="relative mb-7">
       <img
         src="src\assets\bannerImg.png"
         alt="Descripción de la imagen"

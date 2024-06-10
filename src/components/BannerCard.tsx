@@ -1,13 +1,13 @@
-import React from "react";
-import NextBackButton, { Position } from "./NextBackButton";
 import CallToAction from "./CallToAction";
+import React from "react";
+import BackNextButton from "./BackNextButton";
 
 const BannerCard = () => {
   return (
     <div className="flex justify-center">
       <div className=" relative z-10 w-[326px]">
         <div className="inset-0 flex justify-center items-start">
-          <div className="border border-gray-300 rounded-lg mt-6">
+          <div className="rounded-lg mt-6">
             <img
               className="rounded-lg"
               src="src\assets\model1.png"
@@ -22,7 +22,6 @@ const BannerCard = () => {
             </h2>
           </div>
           <CallToAction />
-
           <a
             href="/quiz"
             className="font-regular text-[13px] tracking-wider leading-[16px] font-inter"
@@ -30,8 +29,7 @@ const BannerCard = () => {
             TAKE THE QUIZ
           </a>
           <div className="flex flex-column m-8 ">
-            <NextBackButton position={Position.left} />
-            <NextBackButton position={Position.right} />
+            <BackNextButton />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import ShoppingBag from "../assets/Icons/ShoppingBag";
-import NavBarResponsiveButton from "./NavBarResponsiveButton";
+import ButtonComponent from "./ButtonComponent";
 import HamburgerMenu from "../assets/Icons/HamburgerMenu";
 
 const NavBar: React.FC = () => {
@@ -12,13 +12,13 @@ const NavBar: React.FC = () => {
         </p>
       </div>
 
-      <div className="container mx-auto flex justify-between mb-4">
-        <NavBarResponsiveButton>
+      <div className="container mx-auto flex justify-between mb-3">
+        <ButtonComponent>
           <HamburgerMenu />
-        </NavBarResponsiveButton>
-        <NavBarResponsiveButton>
+        </ButtonComponent>
+        <ButtonComponent>
           <ShoppingBag />
-        </NavBarResponsiveButton>
+        </ButtonComponent>
       </div>
     </div>
   );

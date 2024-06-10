@@ -8,7 +8,7 @@ interface CallToActionProps {
 
 const CallToAction: React.FC<CallToActionProps> = ({ onClick }) => {
   return (
-    <div className="drop-shadow-custom mb-[17px]">
+    <div className="drop-shadow-custom1 mb-[17px]">
       <button
         className="flex items-center bg-primary text-white ps-7 px-6 rounded-lg w-[184px] h-[57px] justify-between"
         onClick={onClick}

@@ -7,7 +7,7 @@ const BannerComponent: React.FC = () => {
       <img
         src="src\assets\bannerImg.png"
         alt="Descripción de la imagen"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset w-full h-full object-cover"
       />
       <BannerCard />
     </div>

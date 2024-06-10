@@ -5,7 +5,7 @@ import ShoppingBag from "../assets/Icons/ShoppingBag";
 import { menu } from "../helpers/mocks/menu";
 
 const NavBar: React.FC = () => {
-  const [selectedButton, setSelectedButton] = useState<number | null>(null);
+  const [selectedButton, setSelectedButton] = useState<number | null>(0);
 
   const handleButtonClick = (index: number) => {
     setSelectedButton(index);

@@ -12,15 +12,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ price, imgUrl }) => {
         <img
           src={`src/assets/${imgUrl}`}
           alt="Product Image"
-          className="w-full "
+          className="w-full md:w-[193px]"
         />
       </div>
-      <p className="text-[16px] font-inter font-medium text-center text-gray-800 mt-2">
-        $ {price}
-      </p>
-      <button className="bg-primary text-white rounded-xl px-2.5">
-        <p className=" text-[16px]">BUY NOW</p>
-      </button>
+      <div className="mt-2 md:flex md:flex-row md:items-center">
+        <p className="text-[16px] font-inter font-medium text-center text-gray-800 md:mr-4 md:mb-0">
+          $ {price}
+        </p>
+        <button className="bg-primary text-white rounded-xl px-2.5 mt-2 md:mt-0">
+          <p className="text-[16px]">BUY NOW</p>
+        </button>
+      </div>
     </div>
   );
 };

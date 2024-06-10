@@ -10,7 +10,7 @@ const Layout: React.FC = () => {
         <h3 className="text-center text-primary opacity-50 text-3xl font-bold leading-[40px] text-inter mb-8">
           Featured Collection
         </h3>
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
           {products.map((product, index) => (
             <ProductCard
               key={index}
@@ -19,7 +19,7 @@ const Layout: React.FC = () => {
             />
           ))}
         </div>
-        <div className="flex justify-center mt-8 mb-40">
+        <div className="flex justify-center mt-8 mb-40 md:mt-14">
           <BackNextButton />
         </div>
       </div>

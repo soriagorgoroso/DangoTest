@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavBar from "./components/NavBar";
+import TopBar from "./components/TopBar";
 import BannerComponent from "./components/BannerComponent";
 import ProductGrid from "./components/ProductGrid";
 import "./App.css";
@@ -19,7 +19,7 @@ const App: React.FC = () => {
   return (
     <>
       <CartProvider>
-        <NavBar handleOpenCart={handleOpenCart} />
+        <TopBar handleOpenCart={handleOpenCart} />
         <BannerComponent />
         <ProductGrid />
         <CartModal isOpen={isCartOpen} onClose={handleCloseCart} />

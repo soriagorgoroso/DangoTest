@@ -2,16 +2,10 @@ import React, { useState } from "react";
 import ButtonComponent from "./ButtonComponent";
 import HamburgerMenu from "../assets/Icons/HamburgerMenu";
 import ShoppingBag from "../assets/Icons/ShoppingBag";
-import { menu } from "../helpers/mocks/menu";
 import { NavBarInterface } from "../types/interfaces";
+import { MainNav } from "./MainNav";
 
-const NavBar: React.FC<NavBarInterface> = ({ handleOpenCart }) => {
-  const [selectedButton, setSelectedButton] = useState<number | null>(0);
-
-  const handleButtonClick = (index: number) => {
-    setSelectedButton(index);
-  };
-
+const TopBar: React.FC<NavBarInterface> = ({ handleOpenCart }) => {
   return (
     <div>
       <div className="h-6 bg-primary">
@@ -27,23 +21,7 @@ const NavBar: React.FC<NavBarInterface> = ({ handleOpenCart }) => {
           </ButtonComponent>
         </div>
         <div className="flex-1 flex justify-center item-center mt-4">
-          <div className="hidden lg:flex space-x-6">
-            {menu.map((buttonText, index) => (
-              <div
-                key={index}
-                className={`w-14  ${
-                  selectedButton === index ? "border-b-4 border-primary" : ""
-                }`}
-              >
-                <button
-                  onClick={() => handleButtonClick(index)}
-                  className={`text-primary font-regular ml-1.5`}
-                >
-                  {buttonText}
-                </button>
-              </div>
-            ))}
-          </div>
+          <MainNav />
         </div>
         <div className="absolute right-0 mt-4 md:me-6">
           <ButtonComponent handleOnClick={handleOpenCart}>
@@ -55,4 +33,4 @@ const NavBar: React.FC<NavBarInterface> = ({ handleOpenCart }) => {
   );
 };
 
-export default NavBar;
+export default TopBar;

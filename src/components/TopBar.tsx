@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import ButtonComponent from "./ButtonComponent";
 import HamburgerMenu from "../assets/Icons/HamburgerMenu";
 import ShoppingBag from "../assets/Icons/ShoppingBag";
-import { NavBarInterface } from "../types/interfaces";
+import { TopBarInterface } from "../types/interfaces";
 import { MainNav } from "./MainNav";
 
-const TopBar: React.FC<NavBarInterface> = ({ handleOpenCart }) => {
+const TopBar: React.FC<TopBarInterface> = ({ handleOpenCart }) => {
   return (
     <div>
       <div className="h-6 bg-primary">

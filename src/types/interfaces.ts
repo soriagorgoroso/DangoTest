@@ -43,6 +43,6 @@ export interface CartModalInterface {
   isOpen: boolean;
   onClose: () => void;
 }
-export interface NavBarInterface {
+export interface TopBarInterface {
   handleOpenCart: () => void;
 }

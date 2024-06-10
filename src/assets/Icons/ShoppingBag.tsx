@@ -1,6 +1,6 @@
 import React from "react";
 
-const ShoppingBagIcon = () => {
+const ShoppingBagIcon: React.FC = () => {
   return (
     <svg
       width="40"

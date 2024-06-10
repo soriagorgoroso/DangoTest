@@ -4,9 +4,9 @@ import BackNextButton from "./BackNextButton";
 
 const BannerCard = () => {
   return (
-    <div className="flex justify-center">
-      <div className=" relative z-10 w-[326px]">
-        <div className="inset-0 flex justify-center items-start">
+    <div className="flex justify-center ">
+      <div className=" relative z-10 w-[326px] md:w-auto">
+        <div className="inset-0 flex justify-center items-start  md:grid-cols-2">
           <div className="rounded-lg mt-6">
             <img
               className="rounded-lg"

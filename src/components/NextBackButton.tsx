@@ -1,16 +1,7 @@
 import React from "react";
 import ArrowLeft from "../assets/Icons/ArrowLeft";
 import ArrowRight from "../assets/Icons/ArrowRight";
-
-export enum Position {
-  "left",
-  "right",
-}
-
-interface NextBackButtonProps {
-  onClick?: () => void;
-  position: Position;
-}
+import { NextBackButtonProps, Position } from "../types/interfaces";
 
 const NextBackButton: React.FC<NextBackButtonProps> = ({
   onClick,

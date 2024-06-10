@@ -1,20 +1,13 @@
 import React from "react";
 import ArrowRightSmall from "../assets/Icons/ArrowRightSmall";
-
-interface CallToActionProps {
-  onClick?: () => void;
-  label: string;
-  variant: "default" | "primary"; // Nuevo tipo de prop para el estilo
-}
+import { CallToActionProps } from "../types/interfaces";
 
 const CallToAction: React.FC<CallToActionProps> = ({
   onClick,
   label,
-  variant, // Nueva prop
+  variant,
 }) => {
-  // Determinar la clase de color según el valor de la prop "variant"
   const colorClass = variant === "primary" ? "text-primary" : "text-white";
-  // Determinar el color de fondo según el valor de la prop "variant"
   const bgClass =
     variant === "default"
       ? "bg-primary"

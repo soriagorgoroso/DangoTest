@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import { ProductInterface } from "../types/interfaces";
 
-interface ProductCardProps {
-  price: number;
-  imgUrl: string;
-}
+const ProductCard: React.FC<ProductInterface> = ({ price, imgUrl, id }) => {
+  const { addToCart } = useContext(CartContext);
 
-const ProductCard: React.FC<ProductCardProps> = ({ price, imgUrl }) => {
+  const handleAddToCart = () => {
+    addToCart({ id, price, imgUrl });
+  };
+
   return (
     <div className="drop-shadow-custom2 bg-white rounded-xl shadow-lg p-4 flex flex-col items-center mt-3">
       <div>
@@ -15,7 +18,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ price, imgUrl }) => {
         <p className="text-[16px] font-inter font-medium text-center text-gray-800 md:mr-4 md:mb-0">
           $ {price}
         </p>
-        <button className="bg-primary text-white rounded-xl px-2.5 mt-2 md:mt-0">
+        <button
+          onClick={handleAddToCart}
+          className="bg-primary text-white rounded-xl px-2.5 mt-2 md:mt-0"
+        >
           <p className="text-[16px]">BUY NOW</p>
         </button>
       </div>

@@ -3,7 +3,7 @@ import BackNextButton from "./BackNextButton";
 import ProductCard from "./ProductCard";
 import { products } from "../helpers/mocks/products";
 
-const Layout: React.FC = () => {
+const ProductGrid: React.FC = () => {
   return (
     <div className="flex flex-column justify-center items-center">
       <div className=" justify-center mt-6">
@@ -16,6 +16,7 @@ const Layout: React.FC = () => {
               key={index}
               imgUrl={product.imgUrl}
               price={product.price}
+              id={product.id}
             />
           ))}
         </div>
@@ -27,4 +28,4 @@ const Layout: React.FC = () => {
   );
 };
 
-export default Layout;
+export default ProductGrid;

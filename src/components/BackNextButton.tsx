@@ -2,7 +2,8 @@ import React from "react";
 import ButtonComponent from "./ButtonComponent";
 import HamburgerMenu from "../assets/Icons/HamburgerMenu";
 import ShoppingBag from "../assets/Icons/ShoppingBag";
-import NextBackButton, { Position } from "./NextBackButton";
+import NextBackButton from "./NextBackButton";
+import { Position } from "../types/interfaces";
 
 const BackNextButton = () => {
   return (

@@ -1,11 +1,11 @@
-import React, { ReactNode } from "react";
+import React from "react";
+import { ButtonComponentProps } from "../types/interfaces";
 
-interface ButtonComponentProps {
-  children: ReactNode;
-}
-
-const ButtonComponent: React.FC<ButtonComponentProps> = ({ children }) => {
-  return <button>{children}</button>;
+const ButtonComponent: React.FC<ButtonComponentProps> = ({
+  children,
+  handleOnClick,
+}) => {
+  return <button onClick={handleOnClick}>{children}</button>;
 };
 
 export default ButtonComponent;
